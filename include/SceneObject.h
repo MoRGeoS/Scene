@@ -5,7 +5,7 @@ class Scene;
 #include "SceneComponent.h"
 #include <unordered_map>
 
-class __declspec(dllimport) SceneObject
+class SCENE_API SceneObject
 {
 	friend class Scene;
 	friend class SceneComponent;

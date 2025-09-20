@@ -2,7 +2,13 @@
 #pragma once
 class SceneObject;
 
-class __declspec(dllimport) SceneComponent
+#if defined(Scene_EXPORTS)
+#	define SCENE_API __declspec(dllexport)
+#else
+#	define SCENE_API __declspec(dllimport)
+#endif
+
+class SCENE_API SceneComponent
 {
 	friend class SceneObject;
 public:

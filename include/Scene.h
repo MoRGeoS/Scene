@@ -2,7 +2,7 @@
 #pragma once
 #include "SceneObject.h"
 
-class __declspec(dllimport) Scene
+class SCENE_API Scene
 {
 public:
     Scene();
