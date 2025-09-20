@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Имя проекта
-project(Bobiq LANGUAGES CXX)
+project(Scene LANGUAGES CXX)
 
 # Стандарт C++
 set(CMAKE_CXX_STANDARD 17)
