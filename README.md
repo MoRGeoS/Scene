@@ -1,2 +1,2 @@
 # Scene
-### This is simple Scene for anything
+### This is simple Scene
