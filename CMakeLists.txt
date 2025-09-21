@@ -25,10 +25,16 @@ file(GLOB_RECURSE PROJECT_HEADERS CONFIGURE_DEPENDS
 )
 
 # Исполняемый файл (если нужен стат/динамическая библиотека — замените на add_library)
-add_library(${PROJECT_NAME} SHARED
+add_library(${PROJECT_NAME} STATIC
     ${PROJECT_SOURCES}
     ${PROJECT_HEADERS}
 )
+
+if(BUILD_SHARED_LIBS)
+    target_compile_definitions(Scene PRIVATE SCENE_BUILDING_SCENE)
+else()
+    target_compile_definitions(Scene PUBLIC SCENE_STATIC)
+endif()
 
 # Инклуды проекта
 target_include_directories(${PROJECT_NAME}
