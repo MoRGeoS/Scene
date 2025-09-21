@@ -2,11 +2,7 @@
 #pragma once
 class SceneObject;
 
-#if defined(Scene_EXPORTS)
-#	define SCENE_API __declspec(dllexport)
-#else
-#	define SCENE_API __declspec(dllimport)
-#endif
+#include "Export.h"
 
 class SCENE_API SceneComponent
 {

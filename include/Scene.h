@@ -1,5 +1,6 @@
 // Scene.h
 #pragma once
+#include "Export.h"
 #include "SceneObject.h"
 
 class SCENE_API Scene

@@ -2,6 +2,7 @@
 #pragma once
 class Scene;
 
+#include "Export.h"
 #include "SceneComponent.h"
 #include <unordered_map>
 
